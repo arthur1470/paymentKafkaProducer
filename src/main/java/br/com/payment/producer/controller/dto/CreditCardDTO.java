@@ -1,16 +1,15 @@
 package br.com.payment.producer.controller.dto;
 
-import java.time.LocalDateTime;
-
 public class CreditCardDTO {
 
 	private String cardNumber;
-	private long cardExpirationDate;
+	private String cardExpirationDate;
 	private String cardOwnerName;
 	private String cardOwnerCpf;
-	private LocalDateTime datePayment;
+	private String datePayment;
 	private Double totalAmount;
 	private Integer installments;
+	private Double installmentsAmount;
 
 	public String getCardNumber() {
 		return cardNumber;
@@ -20,11 +19,11 @@ public class CreditCardDTO {
 		this.cardNumber = cardNumber;
 	}
 
-	public long getCardExpirationDate() {
+	public String getCardExpirationDate() {
 		return cardExpirationDate;
 	}
 
-	public void setCardExpirationDate(long cardExpirationDate) {
+	public void setCardExpirationDate(String cardExpirationDate) {
 		this.cardExpirationDate = cardExpirationDate;
 	}
 
@@ -44,11 +43,11 @@ public class CreditCardDTO {
 		this.cardOwnerCpf = cardOwnerCpf;
 	}
 
-	public LocalDateTime getDatePayment() {
+	public String getDatePayment() {
 		return datePayment;
 	}
 
-	public void setDatePayment(LocalDateTime datePayment) {
+	public void setDatePayment(String datePayment) {
 		this.datePayment = datePayment;
 	}
 
@@ -76,5 +75,4 @@ public class CreditCardDTO {
 		this.installmentsAmount = installmentsAmount;
 	}
 
-	private Double installmentsAmount;
 }

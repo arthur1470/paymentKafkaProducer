@@ -1,14 +1,12 @@
 package br.com.payment.producer.controller.dto;
 
-import java.time.LocalDateTime;
-
 public class PixDTO {
 
 	private String cpf;
 	private String name;
 	private String paymentPix;
 	private String payerPix;
-	private LocalDateTime paymentDate;
+	private String paymentDate;
 	private Double totalAmount;
 
 	public String getCpf() {
@@ -43,11 +41,11 @@ public class PixDTO {
 		this.payerPix = payerPix;
 	}
 
-	public LocalDateTime getPaymentDate() {
+	public String getPaymentDate() {
 		return paymentDate;
 	}
 
-	public void setPaymentDate(LocalDateTime paymentDate) {
+	public void setPaymentDate(String paymentDate) {
 		this.paymentDate = paymentDate;
 	}
 
